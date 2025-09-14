@@ -14,14 +14,12 @@ export function GalaxyMaterial(
   );
 
   return (
-    <meshPhysicalMaterial
+        <meshStandardMaterial
       map={albedoMap}
       aoMap={ormMap}
-      metalnessMap={ormMap}
       roughnessMap={ormMap}
+      metalnessMap={ormMap}
       normalMap={normalMap}
-      clearcoat={1}
-      clearcoatRoughness={0.3}
       {...props}
     />
   );
